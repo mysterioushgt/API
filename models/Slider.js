@@ -9,7 +9,6 @@ const SliderSchema = new mongoose.Schema({
   description: {
     type: String,
     required: true
-
   },
   image: {
     public_id: {
@@ -18,7 +17,7 @@ const SliderSchema = new mongoose.Schema({
     },
     url: {
         type: String,
-        requiredd: true,
+        required: true,
     },
   },
 },{timestamps: true});

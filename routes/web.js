@@ -7,8 +7,6 @@ const CategoryController = require('../controller/CategoryController')
 const SliderController = require('../controller/SliderController')
 
 
-
-
 //usercontroller
 router.get('/getalluser', UserController.getalluser)
 router.get('/admin/getUser/:id', UserController.getSingleUser)

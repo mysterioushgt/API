@@ -9,14 +9,13 @@ cloudinary.config({
 class SliderController {
 
     static display = async (req, res) => {
-        try {
-          const slider = await SliderModel.find();
-          if (slider) {
-            res.status(200).json(slider);
-          } else {
-            res.status(404).json({ message: 'Slider not found' });
-          }
-        } catch (err) {
+      try {
+        const sliders = await SliderModel.find();
+        res.status(200).json({
+          success: true,
+          sliders
+        });
+      } catch (err) {
           res.status(500).json({ message: err.message });
         }
       }

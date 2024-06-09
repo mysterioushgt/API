@@ -5,7 +5,7 @@ cloudinary.config({
   api_key: '661477146633168', 
   api_secret: 'QyINe3Q4WivgC2eTmlsZoYwSDRc' 
 });
-//salonigarg
+
 class CategoryController {
   static display = async (req, res) => {
     try {
