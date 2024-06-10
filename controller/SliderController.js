@@ -7,7 +7,7 @@ cloudinary.config({
     api_secret: 'QyINe3Q4WivgC2eTmlsZoYwSDRc' 
   });
 class SliderController {
-
+    
     static display = async (req, res) => {
       try {
         const sliders = await SliderModel.find();
