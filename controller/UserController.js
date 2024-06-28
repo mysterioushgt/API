@@ -110,7 +110,7 @@ class UserController {
                         res.cookie('token', token)
                         res
                             .status(201)
-                            .json({ status: "success", message: "Login successfully with web token 😃🍻", token, user });
+                            .json({ status: "success", message: "Login successfully with web token 😃🍻"});
                     } else {
                         res.status(401).json({ status: "failed", message: "'Email and Password is not valid !😓" });
                     }
