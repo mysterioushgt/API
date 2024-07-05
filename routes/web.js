@@ -5,6 +5,7 @@ const{ChangeUserAuth} = require('../middleware/auth')
 const ProductController = require('../controller/ProductController')
 const CategoryController = require('../controller/CategoryController')
 const SliderController = require('../controller/SliderController')
+const PaymentController = require('../controller/PaymentController')
 
 
 //usercontroller
@@ -41,5 +42,9 @@ router.post('/insertSlider' , SliderController.insert);
 router.get('/viewSlider/:id' , SliderController.view);
 router.post('/updateSlider/:id' , SliderController.update);
 router.delete('/deleteSlider/:id' , SliderController.delete);
+
+//PAYMENT CONTROLLER
+router.post('/payment/process', PaymentController.processPayment)
+router.get('/stripeapiKey', PaymentController.sendStripeApiKey)
 
 module.exports = router

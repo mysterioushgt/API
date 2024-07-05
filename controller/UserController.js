@@ -4,7 +4,6 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
 
 
-
 cloudinary.config({
     cloud_name: 'dnzs5c9q3',
     api_key: '661477146633168',
