@@ -54,4 +54,5 @@ router.get('/order/getSingleOrder/:id',ChangeUserAuth, OrderController.getSingle
 router.get('/order/myOrder',ChangeUserAuth, OrderController.myOrder)
 router.get('/order/getAllOrders',ChangeUserAuth, OrderController.getAllOrders)
 router.get('/order/deleteOrder/:id', ChangeUserAuth,OrderController.deleteOrder)
+
 module.exports = router
