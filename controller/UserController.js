@@ -4,7 +4,6 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
 
 
-
 cloudinary.config({
     cloud_name: 'dnzs5c9q3',
     api_key: '661477146633168',
@@ -110,7 +109,7 @@ class UserController {
                         res.cookie('token', token)
                         res
                             .status(201)
-                            .json({ status: "success", message: "Login successfully with web token 😃🍻", token, user });
+                            .json({ status: "success", message: "Login successfully with web token 😃🍻" ,token , user});
                     } else {
                         res.status(401).json({ status: "failed", message: "'Email and Password is not valid !😓" });
                     }
